@@ -34,7 +34,7 @@ declare global {
 
 export type Badge = 'none' | 'info' | 'missing' | 'alert';
 
-@customElement('cai-thumbnail')
+@customElement('cai-thumbnail-dm-plugin')
 export class Thumbnail extends LitElement {
   static readonly badgeMap: Record<Badge, TemplateResult | typeof nothing> = {
     none: nothing,
@@ -85,7 +85,7 @@ export class Thumbnail extends LitElement {
           width: var(--cai-thumbnail-size, 72px);
           height: var(--cai-thumbnail-size, 72px);
         }
-        .container {
+        .container-dm-plugin {
           position: relative;
           width: 100%;
           height: 100%;
@@ -106,7 +106,7 @@ export class Thumbnail extends LitElement {
             var(--cai-thumbnail-selected-shadow-spread, 3px)
             var(--cai-thumbnail-selected-shadow-color, #1473e6);
         }
-        cai-tooltip-dm-plugin.badge-tooltip,
+        cai-tooltip-dm-plugin.badge-tooltip-dm-plugin,
         .badge-no-tooltip-dm-plugin {
           position: absolute;
           top: var(--cai-thumbnail-badge-icon-top, 1px);
@@ -116,7 +116,7 @@ export class Thumbnail extends LitElement {
           width: var(--cai-thumbnail-badge-icon-width, 20px);
           height: var(--cai-thumbnail-badge-icon-height, 20px);
         }
-        cai-tooltip-dm-plugin.badge-tooltip {
+        cai-tooltip-dm-plugin.badge-tooltip-dm-plugin {
           pointer-events: auto;
         }
         .badge-icon-dm-plugin {
@@ -146,12 +146,12 @@ export class Thumbnail extends LitElement {
 
   render() {
     const containerClasses = classPartMap({
-      container: true,
+      'container-dm-plugin': true,
       selected: this.selected,
     });
 
     return html`<style>
-        .container {
+        .container-dm-plugin {
           background: url(${this.src}) var(--cai-thumbnail-bgcolor, #eaeaea);
         }
       </style>
@@ -164,7 +164,7 @@ export class Thumbnail extends LitElement {
                   ${Thumbnail.badgeMap[this.badge]}
                 </div>
               </cai-tooltip-dm-plugin>`
-            : html`<div class="badge-no-tooltip">
+            : html`<div class="badge-no-tooltip-dm-plugin">
                 ${Thumbnail.badgeMap[this.badge]}
               </div>`}
         </slot>

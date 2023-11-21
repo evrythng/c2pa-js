@@ -25,7 +25,7 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
             var(--cai-thumbnail-selected-shadow-spread, 3px)
             var(--cai-thumbnail-selected-shadow-color, #1473e6);
         }
-        cai-tooltip-dm-plugin.badge-tooltip,
+        cai-tooltip-dm-plugin.badge-tooltip-dm-plugin,
         .badge-no-tooltip-dm-plugin {
           position: absolute;
           top: var(--cai-thumbnail-badge-icon-top, 1px);
@@ -35,7 +35,7 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
           width: var(--cai-thumbnail-badge-icon-width, 20px);
           height: var(--cai-thumbnail-badge-icon-height, 20px);
         }
-        cai-tooltip-dm-plugin.badge-tooltip {
+        cai-tooltip-dm-plugin.badge-tooltip-dm-plugin {
           pointer-events: auto;
         }
         .badge-icon-dm-plugin {
@@ -59,7 +59,7 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
             var(--cai-icon-width, #8e8e8e)
           );
         }
-      `]}render(){const i=l({container:!0,selected:this.selected});return a`<style>
+      `]}render(){const i=l({"container-dm-plugin":!0,selected:this.selected});return a`<style>
         .container-dm-plugin {
           background: url(${this.src}) var(--cai-thumbnail-bgcolor, #eaeaea);
         }
@@ -71,7 +71,7 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
                 <div class="included-badge-dm-plugin" slot="trigger">
                   ${r.badgeMap[this.badge]}
                 </div>
-              </cai-tooltip-dm-plugin>`:a`<div class="badge-no-tooltip">
+              </cai-tooltip-dm-plugin>`:a`<div class="badge-no-tooltip-dm-plugin">
                 ${r.badgeMap[this.badge]}
               </div>`}
         </slot>
@@ -79,9 +79,9 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
               <cai-icon-broken-image-dm-plugin></cai-icon-broken-image-dm-plugin>
             </div>`}
       </div>`}};d.badgeMap={none:t,info:a`<cai-icon-info-dm-plugin
-      class="badge-icon"
+      class="badge-icon-dm-plugin"
     ></cai-icon-info-dm-plugin>`,missing:a`<cai-icon-missing-dm-plugin
-      class="badge-icon"
+      class="badge-icon-dm-plugin"
     ></cai-icon-missing-dm-plugin>`,alert:a`<cai-icon-alert-dm-plugin
-      class="badge-icon"
-    ></cai-icon-alert-dm-plugin>`},i([o({type:String})],d.prototype,"src",void 0),i([o({type:String})],d.prototype,"badge",void 0),i([o({type:Boolean})],d.prototype,"selected",void 0),i([o({type:String,attribute:"badge-help-text"})],d.prototype,"badgeHelpText",void 0),d=r=i([c("cai-thumbnail")],d);
+      class="badge-icon-dm-plugin"
+    ></cai-icon-alert-dm-plugin>`},i([o({type:String})],d.prototype,"src",void 0),i([o({type:String})],d.prototype,"badge",void 0),i([o({type:Boolean})],d.prototype,"selected",void 0),i([o({type:String,attribute:"badge-help-text"})],d.prototype,"badgeHelpText",void 0),d=r=i([c("cai-thumbnail-dm-plugin")],d);
