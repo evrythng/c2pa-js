@@ -115,7 +115,7 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{r as t,$ as e,w as 
       <div id="view-more-container-dm-plugin">
         ${this.viewMoreUrl?e`
               <a
-                id="view-more"
+                id="view-more-dm-plugin"
                 part=${l.cssParts.viewMore}
                 href=${this.viewMoreUrl}
                 target="_blank"

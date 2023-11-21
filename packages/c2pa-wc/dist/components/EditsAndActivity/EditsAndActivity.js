@@ -52,7 +52,9 @@ import{__decorate as i}from"../../b803f408.js";import{s as t,r as o,$ as s}from"
                         src=${i}
                         alt=${t}
                       />`:null}
-                  <span class="section-edits-and-activity-list-item-label-dm-plugin">
+                  <span
+                    class="section-edits-and-activity-list-item-label-dm-plugin"
+                  >
                     ${t}
                   </span>
                 </dt>

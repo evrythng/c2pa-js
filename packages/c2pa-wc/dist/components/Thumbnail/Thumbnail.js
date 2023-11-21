@@ -78,4 +78,10 @@ import{__decorate as i,e as o}from"../../b803f408.js";import{w as t,$ as a,s as 
         ${this.src?t:a`<div class="no-image-dm-plugin">
               <cai-icon-broken-image-dm-plugin></cai-icon-broken-image-dm-plugin>
             </div>`}
-      </div>`}};d.badgeMap={none:t,info:a`<cai-icon-info-dm-plugin class="badge-icon"></cai-icon-info-dm-plugin>`,missing:a`<cai-icon-missing-dm-plugin class="badge-icon"></cai-icon-missing-dm-plugin>`,alert:a`<cai-icon-alert-dm-plugin class="badge-icon"></cai-icon-alert-dm-plugin>`},i([o({type:String})],d.prototype,"src",void 0),i([o({type:String})],d.prototype,"badge",void 0),i([o({type:Boolean})],d.prototype,"selected",void 0),i([o({type:String,attribute:"badge-help-text"})],d.prototype,"badgeHelpText",void 0),d=r=i([c("cai-thumbnail")],d);
+      </div>`}};d.badgeMap={none:t,info:a`<cai-icon-info-dm-plugin
+      class="badge-icon"
+    ></cai-icon-info-dm-plugin>`,missing:a`<cai-icon-missing-dm-plugin
+      class="badge-icon"
+    ></cai-icon-missing-dm-plugin>`,alert:a`<cai-icon-alert-dm-plugin
+      class="badge-icon"
+    ></cai-icon-alert-dm-plugin>`},i([o({type:String})],d.prototype,"src",void 0),i([o({type:String})],d.prototype,"badge",void 0),i([o({type:Boolean})],d.prototype,"selected",void 0),i([o({type:String,attribute:"badge-help-text"})],d.prototype,"badgeHelpText",void 0),d=r=i([c("cai-thumbnail")],d);

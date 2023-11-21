@@ -227,7 +227,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
         ${this.viewMoreUrl
           ? html`
               <a
-                id="view-more"
+                id="view-more-dm-plugin"
                 part=${ManifestSummary.cssParts.viewMore}
                 href=${this.viewMoreUrl}
                 target="_blank"

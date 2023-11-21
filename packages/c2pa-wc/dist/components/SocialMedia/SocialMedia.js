@@ -27,7 +27,9 @@ import{__decorate as o}from"../../b803f408.js";import{s as i,r as s,$ as e}from"
       <ul class="section-social-media-list-dm-plugin">
         ${null===(o=this._data)||void 0===o?void 0:o.map((o=>e`
             <li class="section-social-media-list-item-dm-plugin">
-              <cai-icon-dm-plugin source="${o["@id"]}"></cai-icon-dm-plugin>
+              <cai-icon-dm-plugin
+                source="${o["@id"]}"
+              ></cai-icon-dm-plugin>
               <a
                 class="section-social-media-list-item-link-dm-plugin"
                 href=${o["@id"]}
