@@ -39,13 +39,13 @@ export class Thumbnail extends LitElement {
   static readonly badgeMap: Record<Badge, TemplateResult | typeof nothing> = {
     none: nothing,
     info: html`<cai-icon-info-dm-plugin
-      class="badge-icon"
+      class="badge-icon-dm-plugin"
     ></cai-icon-info-dm-plugin>`,
     missing: html`<cai-icon-missing-dm-plugin
-      class="badge-icon"
+      class="badge-icon-dm-plugin"
     ></cai-icon-missing-dm-plugin>`,
     alert: html`<cai-icon-alert-dm-plugin
-      class="badge-icon"
+      class="badge-icon-dm-plugin"
     ></cai-icon-alert-dm-plugin>`,
   };
 
@@ -85,7 +85,7 @@ export class Thumbnail extends LitElement {
           width: var(--cai-thumbnail-size, 72px);
           height: var(--cai-thumbnail-size, 72px);
         }
-        .container-dm-plugin {
+        .container {
           position: relative;
           width: 100%;
           height: 100%;
@@ -151,7 +151,7 @@ export class Thumbnail extends LitElement {
     });
 
     return html`<style>
-        .container-dm-plugin {
+        .container {
           background: url(${this.src}) var(--cai-thumbnail-bgcolor, #eaeaea);
         }
       </style>
