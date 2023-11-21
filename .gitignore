@@ -37,7 +37,6 @@ packages/c2pa/dist
 packages/react/dist
 examples/minimal-ts-webpack/dist
 tools/testing/dist
-packages/c2pa-wc/dist/
 build.tar.gz
 
 # TypeScript cache
