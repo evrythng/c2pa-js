@@ -118,7 +118,6 @@ export async function createL2ManifestStore(
         hasManifest: !!ingredient.manifest,
         error: getErrorStatus(ingredient.validationStatus),
         validationStatus: ingredient.validationStatus,
-        documentId:ingredient.documentId,
       };
     },
   );
